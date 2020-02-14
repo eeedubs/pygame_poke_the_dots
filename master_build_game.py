@@ -31,21 +31,11 @@ ctx = {
 }
 
 def main(ctx):
-  # create game
   game = Game(ctx)
   game.play(ctx)
 
 class Game:
   def __init__(self, ctx):
-    # initiate pygame's display and font, and set the caption
-    # create the window with the width and height attributes
-    # set the font, and fill the window
-    # create the clock
-    # define the frame rate
-    # set close selected to False
-    # set continue game to True
-    # create the small dot and big dot, then randomize their locations
-    # set the score to 0
     pygame.display.init()
     pygame.font.init()
     pygame.display.set_caption(ctx["game_title"])
@@ -134,7 +124,6 @@ class Game:
         sys.exit()
 
 class Dot:
-  # an object in this class represents a complete dot
   def __init__(self, window, color, center, radius, velocity):
     self._window = window
     self._color = color
