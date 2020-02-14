@@ -1,5 +1,4 @@
-# Poke the Dots Version 5
-
+# Poke the Dots - Pygame Variation
 
 import pygame, sys, string
 from math import sqrt
